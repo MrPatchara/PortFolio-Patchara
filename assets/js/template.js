@@ -36,3 +36,36 @@ jQuery(document).ready(function($) {
 	});
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".certificate-slider");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    let index = 0;
+
+    function showSlide() {
+        const totalSlides = document.querySelectorAll(".certificate-item").length;
+        if (index >= totalSlides) {
+            index = 0;
+        } else if (index < 0) {
+            index = totalSlides - 1;
+        }
+        slider.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    nextBtn.addEventListener("click", function () {
+        index++;
+        showSlide();
+    });
+
+    prevBtn.addEventListener("click", function () {
+        index--;
+        showSlide();
+    });
+
+    // เลื่อนอัตโนมัติทุก 3 วินาที
+    setInterval(() => {
+        index++;
+        showSlide();
+    }, 3000);
+});

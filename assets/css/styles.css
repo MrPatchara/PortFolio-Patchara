@@ -796,3 +796,51 @@ footer.entry-meta .meta-in {
     max-width: 1080px;
   }
 }
+
+/* cer
+/////////////////////////////////////////////////////////////////////*/
+.certificate-gallery {
+  position: relative;
+  max-width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.certificate-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.certificate-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.certificate-item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
