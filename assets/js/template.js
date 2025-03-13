@@ -67,5 +67,5 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(() => {
         index++;
         showSlide();
-    }, 3000);
+    }, 4000);
 });
