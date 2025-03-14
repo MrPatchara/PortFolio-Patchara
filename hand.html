@@ -6,13 +6,13 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
-	<title>Patchara Al-umaree Portfolio</title>
+	<title>Nokov-Training</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 	
 	<!-- Bootstrap -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
-	<!-- Icons -->
+	<!-- Icon font -->
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<!-- Fonts -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
@@ -21,11 +21,10 @@
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
-
-<body class="home">
+<body>
 
 <header id="header">
-	<div id="head" class="parallax" parallax-speed="2">
+	<div id="head" class="parallax" parallax-speed="1">
 		<h1 id="logo" class="text-center">
 			<span class="title">Patchara Al-umaree</span>
 			<span class="tagline">Sports Scientist<br>
@@ -33,7 +32,7 @@
 		</h1>
 	</div>
 
-	<nav class="navbar navbar-default navbar-sticky">
+	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			
 			<div class="navbar-header">
@@ -43,8 +42,8 @@
 			<div class="navbar-collapse collapse">
 				
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="about.html">About me</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="about.html">About Me</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
 						<ul class="dropdown-menu">
@@ -64,110 +63,64 @@
 <main id="main">
 
 	<div class="container">
-	
-		<div class="row section recentworks topspace">
+
+		<div class="row topspace">
 			
-			<h2 class="section-title"><span>My Projects</span></h2>
+			<!-- Article main content -->
+			<article class="col-sm-8 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">PROJECT OPEN-CV HAND TRACKING </h1>
+					<h3 class="page-title">Control 3D-Print Inmoov Robotic Hand</h3>
+				</header>
+
+				<iframe id="youtubePlayer" 
+					src="https://www.youtube.com/embed/LW4NS92Rs7Y" 
+					allowfullscreen>
+				</iframe>
+				<h3>Project Description</h3>
+				<p>I developed this project using Python and OpenCV, utilizing a webcam to track hand movements and send control commands to  the robotic fingers.</p>
+				<h4>🔧 Hardware</h4>
+				<blockquote>📍The robotic hand was created using a 3D printer.<br>📍It uses five servo motors to pull strings that control finger movements.<br>📍An ESP32 microcontroller is responsible for sending commands to the motors.</blockquote>
+				<h4>💾 Software & Communication</h4>
+				<blockquote>📍The connection between the  program and the ESP32 is established through a COM port.<br>📍A user-friendly GUI is implemented for easy configuration and control.</blockquote>
+				<p><img src="assets/images/379859_0.jpg" alt=""><img src="assets/images/379860_0.jpg" alt=""></p>
+				
+				<h4>🏆 Project Recognition & Impact</h4>
+				<blockquote>Upon completion, the university recognized the project’s potential and requested to showcase it at the university exhibition. Additionally, it was also presented at Kasetsart University Demonstration School, inspiring young students.</blockquote>
+				<p><img src="assets/images/379867.jpg" alt=""></p>
+				<blockquote>I am truly delighted that a project I initially created for self-education and exploration has become a source of knowledge and inspiration for younger students in my faculty and beyond.</blockquote>
+				<p><img src="assets/images/379866.jpg" alt=""></p>
+			</article>
+			<!-- /Article -->
+
+			<!-- Sidebar -->
+			<aside class="col-md-4 sidebar sidebar-left">
+
+				<div class="widget">
+					<h4>🪧This project is created for personal educational purposes to understand the functionality of OpenCV, software, and hardware.</h4>
+					<p>@ Bangkok, Thailand </p>
+				</div>
+				<div class="widget">
+					<h4>KEYPOINT</h4>
+					<ul>
+						<li><a href="">OpenCV </a>Control Servo-motor</li>
+						<li>3D printing is used to create the robotic hand.</li>
+						<li>The hand is controlled using five servo motors, each responsible for moving one finger.</li>
+						<li>The project focuses on mechanical design and movement control.</li>
+						<li>Integration of hardware and software for precise finger movements.</li>
+						<li>The project is not intended for commercial use.</li>
+					</ul>
+				</div>
+				
+			</aside>			
+			<!-- /Sidebar -->
 			
-			<div class="thumbnails recentworks row">
-				
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<a class="thumbnail" href="smart-beep.html">
-						<span class="img">
-							<img src="assets/images/1741827276322.jpg" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
-						</span>
-						<span class="title">Smart Multi-stage fitness test <br>Sport Innovation Contest 2025</span>
-					</a>
-					<span class="details"><a href="">My Project</a> |<a href="">Python</a> | <a href="">Beep Test</a></span>
-					<h4></h4>
-					<p></p>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<a class="thumbnail" href="hand.html">
-						<span class="img">
-							<img src="assets/images/379709_0.jpg" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
-						</span>
-						<span class="title">Mocap control Robotic Hand  using python & open-cv </span>
-					</a>
-					<span class="details"><a href="">My Project</a> | <a href="">Robotic Hand</a> | <a href="">3D Print</a></span>
-					<h4></h4>
-					<p></p>
-				</div>
-				
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<a class="thumbnail" href="sidebar-right.html">
-						<span class="img">
-							<img src="assets/images/379720_0.jpg" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
-						</span>
-						<span class="title">Smart Ad - using ai for gender Selection ru Innovation 2024 </span>
-					</a>
-					<span class="details"><a href="">My Project</a> | <a href="">AI</a></span>
-					<h4></h4>
-					<p></p>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<a class="thumbnail" href="sidebar-right.html">
-						<span class="img">
-							<img src="assets/images/379726.jpg" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
-						</span>
-						<span class="title">Smart solar parcel receiving box - notification to chat line</span>
-					</a>
-					<span class="details"><a href="">My Project</a> | <a href="">IOT</a>| <a href="">Solar Cell</a></span>
-					<h4></h4>
-					<p></p>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<a class="thumbnail" href="project.html">
-						<span class="img">
-							<img src="assets/images/soon.png" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
-						</span>
-						<span class="title">Coming soon</span>
-					</a>
-					<span class="details"><a href="">My Project</a> | <a href="">Coming soon</a></span>
-					<h4></h4>
-					<p></p>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<a class="thumbnail" href="project.html">
-						<span class="img">
-							<img src="assets/images/soon.png" alt="">
-							<span class="cover"><span class="more">See details &rarr;</span></span>
-						</span>
-						<span class="title">Coming soon</span>
-					</a>
-					<span class="details"><a href="">My Project</a> | <a href="">Coming soon</a></span>
-					<h4></h4>
-					<p></p>
-				</div>
-			</div>
-
-		</div> <!-- /section -->
-
-		<div class="row section topspace">
-			<div class="panel panel-cta"><div class="panel-body">
-				<div class="col-lg-8">
-					<p>"For a detailed overview of my professional experience and qualifications, please <b>download </b> my Resume."</p>
-				</div>
-				<div class="col-lg-4 text-right">
-					<a href="http://www.gettemplate.com/downloads/initio.zip " class="btn btn-primary btn-lg">Download My Resume</a>
-				</div>
-			</div></div>
-		</div> <!-- /section -->
-
+		</div>
 	</div>	<!-- /container -->
-
+	
 </main>
 
-<footer id="footer">
+<footer id="footer" class="topspace">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3 widget">
@@ -228,7 +181,7 @@
 			<div class="col-md-6 widget">
 				<div class="widget-body">
 					<p class="text-right">
-						Copyright &copy; 2025, Patchara <br> 
+						Copyright &copy; 2025, Patchara<br> 
 						
 				</div>
 			</div>
