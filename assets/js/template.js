@@ -69,3 +69,13 @@ document.addEventListener("DOMContentLoaded", function () {
         showSlide();
     }, 4000);
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector('.navbar-toggle');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    menuToggle.addEventListener('click', function() {
+        navbarCollapse.classList.toggle('collapse');
+    });
+});
